@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="536.0" prefWidth="330.0" style="-fx-background-color: #130f40;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.assignment.tictactoe.service.controller.BoardController">
+   <children>
+      <GridPane layoutX="2.0" layoutY="97.0" prefHeight="338.0" prefWidth="360.0" style="-fx-background-color: #ffffff;">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="button1" mnemonicParsing="false" onAction="#ButtonAction" prefHeight="109.0" prefWidth="117.0" style="-fx-background-color: #a4b0be;">
+               <font>
+                  <Font size="48.0" />
+               </font></Button>
+            <Button fx:id="button4" mnemonicParsing="false" onAction="#ButtonAction" prefHeight="109.0" prefWidth="117.0" style="-fx-background-color: #a4b0be;" GridPane.rowIndex="1">
+               <font>
+                  <Font size="48.0" />
+               </font></Button>
+            <Button fx:id="button7" mnemonicParsing="false" onAction="#ButtonAction" prefHeight="109.0" prefWidth="117.0" style="-fx-background-color: #a4b0be;" GridPane.rowIndex="2">
+               <font>
+                  <Font size="48.0" />
+               </font></Button>
+            <Button fx:id="button2" mnemonicParsing="false" onAction="#ButtonAction" prefHeight="109.0" prefWidth="117.0" style="-fx-background-color: #a4b0be;" GridPane.columnIndex="1">
+               <font>
+                  <Font size="48.0" />
+               </font></Button>
+            <Button fx:id="button6" mnemonicParsing="false" onAction="#ButtonAction" prefHeight="110.0" prefWidth="118.0" style="-fx-background-color: #a4b0be;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="48.0" />
+               </font></Button>
+            <Button fx:id="button5" mnemonicParsing="false" onAction="#ButtonAction" prefHeight="109.0" prefWidth="117.0" style="-fx-background-color: #a4b0be;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="48.0" />
+               </font></Button>
+            <Button fx:id="button3" mnemonicParsing="false" onAction="#ButtonAction" prefHeight="109.0" prefWidth="117.0" style="-fx-background-color: #a4b0be;" GridPane.columnIndex="2">
+               <font>
+                  <Font size="48.0" />
+               </font></Button>
+            <Button fx:id="button8" mnemonicParsing="false" onAction="#ButtonAction" prefHeight="109.0" prefWidth="117.0" style="-fx-background-color: #a4b0be;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="48.0" />
+               </font></Button>
+            <Button fx:id="button9" mnemonicParsing="false" onAction="#ButtonAction" prefHeight="109.0" prefWidth="117.0" style="-fx-background-color: #a4b0be;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="48.0" />
+               </font></Button>
+         </children>
+      </GridPane>
+      <Text fill="WHITE" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tic Tac Toe" textAlignment="CENTER" wrappingWidth="360.39999999999986">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="20.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Human Player :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="259.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AI Player :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="175.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tie :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Label fx:id="HumanScore" layoutX="119.0" layoutY="478.0" prefHeight="18.0" prefWidth="37.0" text="Label" textAlignment="CENTER" textFill="#fff600">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="TieScore" layoutX="207.0" layoutY="478.0" prefHeight="18.0" prefWidth="37.0" text="Label" textAlignment="CENTER" textFill="#fff600">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="AiScore" layoutX="325.0" layoutY="478.0" prefHeight="18.0" prefWidth="37.0" text="Label" textAlignment="CENTER" textFill="#fff600">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
